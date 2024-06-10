@@ -150,6 +150,7 @@
 
 .footer-menu-button {
     display: flex;
+    align-items: center;
     /* border: 1px solid var(--primary); */
     background-color: var(--primary);
     color: white;
@@ -162,6 +163,7 @@
 
 .footer-menu-button-sec {
     display: flex;
+    align-items: center;
     border: 1px solid var(--primary);
     /* background-color: var(--primary); */
     color: var(--midnight-blue);;
