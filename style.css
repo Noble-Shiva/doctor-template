@@ -136,6 +136,42 @@
 
 }
 
+.footer-bar {
+    bottom: 0;
+    height: 70px;
+    /* background: red; */
+    position: sticky;
+}
+
+.footer-menu-layout {
+    gap: 15px;
+    display: flex;
+}
+
+.footer-menu-button {
+    /* border: 1px solid var(--primary); */
+    background-color: var(--primary);
+    color: white;
+    text-align: center;
+    /* background-color: rgba(0, 0, 0, 0); */
+    border-radius: 10px;
+    padding: 8px 10px;
+    font-weight: 500;
+    transition: all .3s;
+}
+
+.footer-menu-button-sec {
+    border: 1px solid var(--primary);
+    /* background-color: var(--primary); */
+    color: var(--midnight-blue);;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 10px;
+    padding: 8px 10px;
+    font-weight: 500;
+    transition: all .3s;
+}
+
 
 /* Mobiles */
 @media screen and (max-width: 479px) {
@@ -299,6 +335,19 @@
         width: 105%;
         height: 350px;
         border-radius: 20px;
+    }
+    
+    .lightbox-shop-details {
+        height: 150px;
+    }
+    
+    .store-list, .collection-list-3 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .primary-button.white-absolute {
+        margin-top: 0px;
+        margin-right: 0px;
     }
 }
 
