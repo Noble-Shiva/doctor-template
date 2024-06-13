@@ -346,6 +346,14 @@
         font-size: 15px;
     }
 
+    .font-size-16 {
+        font-size: 16px;
+    }
+
+    .font-size-18 {
+        font-size: 18px;
+    }
+
     .google-map {
         width: 105%;
         height: 350px;
@@ -373,7 +381,8 @@
     }
 
     .accordion-item {
-        padding: 5px 20px;
+        padding: 0px 20px;
+        border-radius: 15px;
     }
 
     .accordion-toggle {
@@ -402,11 +411,61 @@
     }
 
     .white-text._20-px-size {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .list-wrap {
         align-items: flex-start;
+    }
+
+    .description-slide {
+        padding: 0px 20px;
+    }
+
+    .icon-contacts {
+        flex-shrink: 0;
+    }
+
+    .row-contacts {
+        align-items: flex-start;
+    }
+
+    .section-content {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .accordion-toggle {
+        align-items: center;
+    }
+
+    .section.bgr-map {
+        background-image: none;
+    }
+
+    .contact-3-inputs-wrapper {
+        grid-column-gap: 15px;
+        grid-row-gap: 15px;
+    }
+
+    .contacts-3-form {
+        grid-row-gap: 15px;
+    }
+
+    .input.text-area {
+        border-radius: 10px;
+    }
+
+    .blue-block-footer {
+        padding: 20px;
+    }
+
+    .footer-wrapper {
+        padding: 40px 0px;
+    }
+
+    .footer {
+        padding-bottom: 15px;
     }
 }
 
