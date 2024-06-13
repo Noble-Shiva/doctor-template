@@ -156,7 +156,7 @@
     color: white;
     text-align: center;
     /* background-color: rgba(0, 0, 0, 0); */
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 8px 10px;
     font-weight: 500;
 }
@@ -169,7 +169,7 @@
     color: var(--midnight-blue);;
     text-align: center;
     background-color: rgba(0, 0, 0, 0);
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 8px 10px;
     font-weight: 500;
 }
@@ -204,7 +204,7 @@
         max-width: 100%;
         line-height: normal;
         padding-left: 5px;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
         margin-top: 15px;
     }
 
@@ -219,6 +219,7 @@
     .mb-50.home-2-banner {
         max-width: auto !important;
         margin-top: 0px;
+        margin-bottom: 10px;
     }
 
     .primary-button {
@@ -227,7 +228,7 @@
         color: var(--white);
         text-align: center;
         text-transform: capitalize;
-        border-radius: 10px;
+        border-radius: 5px;
         flex: none;
         justify-content: center;
         padding: 8px 20px;
@@ -242,7 +243,7 @@
         color: var(--midnight-blue);
         text-align: center;
         background-color: rgba(0, 0, 0, 0);
-        border-radius: 10px;
+        border-radius: 5px;
         padding: 11px 20px;
         font-weight: 500;
         transition: all .3s;
@@ -258,7 +259,7 @@
         border: 1px solid var(--white);
         color: var(--white);
         background-color: rgba(0, 0, 0, 0);
-        border-radius: 10px;
+        border-radius: 5px;
         height: 46px;
         margin-bottom: 0;
         padding: 14px 130px 14px 28px;
@@ -308,7 +309,7 @@
     }
 
     .image-srvc {
-        border-radius: 10px;
+        border-radius: 5px;
     }
 
     .section {
@@ -329,7 +330,7 @@
         width: 270px;
         flex-shrink: 0;
         background-color: var(--white-2);
-        border-radius: 20px;
+        border-radius: 5px;
         padding: 10px;
     }
 
@@ -341,10 +342,14 @@
         font-size: 18px;
     }
 
+    .font-size-15 {
+        font-size: 15px;
+    }
+
     .google-map {
         width: 105%;
         height: 350px;
-        border-radius: 20px;
+        border-radius: 5px;
     }
     
     .lightbox-shop-details {
@@ -386,6 +391,22 @@
 
     .image-row {
         margin-top: 18px;
+    }
+
+    .link-with-icon {
+        padding: 5px;
+    }
+    
+    .dark-block {
+        padding-top: 30px;
+    }
+
+    .white-text._20-px-size {
+        font-size: 18px;
+    }
+
+    .list-wrap {
+        align-items: flex-start;
     }
 }
 

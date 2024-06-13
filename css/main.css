@@ -12413,6 +12413,10 @@ blockquote {
   grid-column-gap: 15px;
 }
 
+.mt-10 {
+  margin-top: 10px;
+}
+
 .px-5 {
   padding: 0 5rem;
 }
