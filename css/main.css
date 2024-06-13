@@ -5019,7 +5019,7 @@ blockquote {
 
 .grid-card-wrapper-hori {
   z-index: 999;
-  grid-column-gap: 30px;
+  grid-column-gap: 10px;
   grid-row-gap: 30px;
   grid-template-rows: auto auto;
   grid-template-columns: 1fr 1fr 1fr;
