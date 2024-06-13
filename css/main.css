@@ -5354,7 +5354,7 @@ blockquote {
 }
 
 .block-benefits.bgr {
-  background-color: rgba(25, 70, 218, .7);
+  background-color: var(--primary);
   border: 1px solid rgba(255, 255, 255, .5);
 }
 
@@ -12429,12 +12429,12 @@ blockquote {
   padding: 0 1rem;
 }
 
-.pt-1 {
-  padding-top: 1rem;
+.pl-1 {
+  padding-left: 1rem;
 }
 
-.pb-1 {
-  padding-bottom: 1rem;
+.pr-1 {
+  padding-right: 1rem;
 }
 
 .py-1 {

@@ -96,7 +96,7 @@
     justify-content: flex-start;
     border-radius: 0px;
     width: auto;
-    gap: 15px;
+    gap: 10px;
     height: auto;
     display: flex;
     padding: 5px 0px;
@@ -333,6 +333,14 @@
         padding: 10px;
     }
 
+    .grid-card-content {
+        font-size: 15px;
+    }
+
+    .grid-card-title {
+        font-size: 18px;
+    }
+
     .google-map {
         width: 105%;
         height: 350px;
@@ -365,6 +373,19 @@
 
     .accordion-toggle {
         padding: 0px
+    }
+
+    .block-benefits {
+        padding: 10px;
+    }
+    
+    .image-row {
+        width: 55px;
+        height: 55px;
+    }
+
+    .image-row {
+        margin-top: 18px;
     }
 }
 
