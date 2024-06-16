@@ -56,6 +56,16 @@
 
 
 /* Hero Banner Section Styles*/
+.logo-text {
+    max-width: 100%;
+    text-align: left;
+    font-size: 26px;
+    letter-spacing: -1px !important;
+}
+
+.white {
+    color: white;
+}
 
 .hero-container {
     width: 100%;
@@ -470,6 +480,10 @@
 
     .footer {
         padding-bottom: 15px;
+    }
+    
+    .footer-brand-description {
+        font-size: 18px;
     }
 }
 
