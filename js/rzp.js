@@ -37,19 +37,20 @@ document.getElementById('rzp-button1').onclick = function(e){
     e.preventDefault();
     // console.log('button');
     let headers = new Headers();
-    headers.append('Content-Type', 'text/json');
+    headers.append('Content-Type', 'application/json');
     headers.append('Authorization', 'Basic cnpwX2xpdmVfZHRrenIxbWlCbFpGMlc6QnB3MkE4RWR0aXJBajZRUnBDYnpGcGJt');
 
-    fetch('https://api.razorpay.com/v1/orders', {
-        headers: headers,
-        body: {
-            amount: 100,
-            currency: "INR" 
-        },
-        method: "post",
-        mode: "cors"
-    }).then(data => data.json()).then((d) => {
+    axios.post('https://api.razorpay.com/v1/orders', {
+        amount: 100,
+        currency: "INR" 
+    }, {
+        headers: {
+            'Content-Type': 'application/json',
+            'Access-Control-Allow-Origin': '*',
+            'Authorization': 'Basic cnpwX2xpdmVfZHRrenIxbWlCbFpGMlc6QnB3MkE4RWR0aXJBajZRUnBDYnpGcGJt'
+        }
+    }).then((d) => {
         console.log(d);
-    })
+    }).catch(err => console.log(err))
     // rzp1.open();
 }
