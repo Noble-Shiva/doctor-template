@@ -40,17 +40,28 @@ document.getElementById('rzp-button1').onclick = function(e){
     headers.append('Content-Type', 'application/json');
     headers.append('Authorization', 'Basic cnpwX2xpdmVfZHRrenIxbWlCbFpGMlc6QnB3MkE4RWR0aXJBajZRUnBDYnpGcGJt');
 
-    axios.post('https://api.razorpay.com/v1/orders', {
-        amount: 100,
-        currency: "INR" 
-    }, {
-        headers: {
-            'Content-Type': 'application/json',
-            'Access-Control-Allow-Origin': '*',
-            'Authorization': 'Basic cnpwX2xpdmVfZHRrenIxbWlCbFpGMlc6QnB3MkE4RWR0aXJBajZRUnBDYnpGcGJt'
-        }
-    }).then((d) => {
-        console.log(d);
-    }).catch(err => console.log(err))
+    // fetch('https://api.razorpay.com/v1/orders', {
+    //     headers,
+    //     method: 'POST',
+    // }).then(data => data.json()).then((d) => {
+    //     console.log(d);
+    // }).catch(err => console.log(err))
+    $.ajax({
+        url: "https://api.razorpay.com/v1/orders",
+        method: "POST",
+        data: JSON.stringify({
+            "amount": 100,
+            "currency": "INR",
+        }),
+        contentType: "application/json",
+        headers: headers,
+        dataType: "json",
+        success: function(data) {
+            console.log('Success', data);
+        },
+        error: function(err) {
+            console.log('Error', err)
+        },
+    });
     // rzp1.open();
 }
