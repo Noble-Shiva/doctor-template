@@ -34,34 +34,39 @@ rzp1.on('payment.failed', function (response){
 });
 // var instance = new Razorpay({ key_id: 'rzp_live_dtkzr1miBlZF2W', key_secret: 'Bpw2A8EdtirAj6QRpCbzFpbm' })
 document.getElementById('rzp-button1').onclick = function(e){
-    e.preventDefault();
     // console.log('button');
     let headers = new Headers();
     headers.append('Content-Type', 'application/json');
+    headers.append('Access-Control-Allow-Origin', '*');
     headers.append('Authorization', 'Basic cnpwX2xpdmVfZHRrenIxbWlCbFpGMlc6QnB3MkE4RWR0aXJBajZRUnBDYnpGcGJt');
 
-    // fetch('https://api.razorpay.com/v1/orders', {
-    //     headers,
-    //     method: 'POST',
-    // }).then(data => data.json()).then((d) => {
-    //     console.log(d);
-    // }).catch(err => console.log(err))
-    $.ajax({
-        url: "https://api.razorpay.com/v1/orders",
-        method: "POST",
+    fetch('https://api.razorpay.com/v1/orders', {
+        headers,
+        method: 'POST',
         data: JSON.stringify({
             "amount": 100,
             "currency": "INR",
         }),
-        contentType: "application/json",
-        headers: headers,
-        dataType: "json",
-        success: function(data) {
-            console.log('Success', data);
-        },
-        error: function(err) {
-            console.log('Error', err)
-        },
-    });
+    }).then(data => data.json()).then((d) => {
+        console.log(d);
+    }).catch(err => console.log(err))
+    // $.ajax({
+    //     url: "https://api.razorpay.com/v1/orders",
+    //     method: "POST",
+    //     data: JSON.stringify({
+    //         "amount": 100,
+    //         "currency": "INR",
+    //     }),
+    //     contentType: "application/json",
+    //     headers: headers,
+    //     dataType: "json",
+    //     success: function(data) {
+    //         console.log('Success', data);
+    //     },
+    //     error: function(err) {
+    //         console.log('Error', err)
+    //     },
+    // });
     // rzp1.open();
+    e.preventDefault();
 }
